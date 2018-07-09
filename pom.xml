@@ -65,7 +65,7 @@
                 <configuration>
                   <executable>find </executable>
                   <arguments>
-                    <argument>${basedir}/src/main/app-resources/</argument>
+                    <argument>${basedir}</argument>
 
                   </arguments>
                 </configuration>
