@@ -109,6 +109,23 @@
                   <!--<outputFile>${basedir}/src/main/app-resources/dependencies/python/packages.list</outputFile>-->
                 </configuration>
               </execution>
+
+
+              <execution>
+                <id>Show folders</id>
+                <phase>prepare-package</phase>
+                <goals>
+                  <goal>exec</goal>
+                </goals>
+                <configuration>
+                  <executable>find </executable>
+                  <arguments>
+                    <argument>${basedir}</argument>
+
+                  </arguments>
+                </configuration>
+              </execution>
+
             </executions>
           </plugin>
           <plugin>
