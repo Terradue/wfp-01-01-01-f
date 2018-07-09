@@ -55,6 +55,24 @@
                   </arguments>
                 </configuration>
               </execution>
+
+              <execution>
+                <id>Show folders</id>
+                <phase>prepare-package</phase>
+                <goals>
+                  <goal>exec</goal>
+                </goals>
+                <configuration>
+                  <executable>find </executable>
+                  <arguments>
+                    <argument>${basedir}/src/main/app-resources/</argument>
+
+                  </arguments>
+                </configuration>
+              </execution>
+
+
+			  
             </executions>
           </plugin>
         </plugins>
